@@ -29,19 +29,19 @@ public class Letter_I {
 	    {
 	        for (int j = 0; j < patternHeight; j++)
 	        {
-				//condition for first and last line of the pattern
-				//also middle of the line
+		    //condition for first and last line of the pattern
+		    //also middle of the line
 	            if ((i == 0 || i == patternHeight - 1) && (j != patternHeight-j-1)) {
 	                System.out.printf("$");
 	            } else if (j == patternHeight / 2 || (i == 0 || i == patternHeight - 1)) {
 	                System.out.printf("##");
 	            }
 	            else {
-					//spacing for perfect alignment
+			//spacing for perfect alignment
 	                System.out.printf(" ");
 	            }
 	        }
-			//shifting to new line after filling the current line pattern
+		//shifting to new line after filling the current line pattern
 	        System.out.printf("\n");
 	    }
 	}
